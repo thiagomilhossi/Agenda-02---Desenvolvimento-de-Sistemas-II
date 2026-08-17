@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Lojas Brincos e Companhia</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="cabecalho">
+            <h2>Lojas Brincos e Cia</h2>
+            <p>Cadastro de Novos Colaboradores</p>
+        </div>
+
+        <div class="conteudo">
+            <form action="processaCadastro.php" method="POST">
+                
+                <div class="grupo-input">
+                    <label>Nome Completo:</label>
+                    <input type="text" name="nome1" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Idade:</label>
+                    <input type="number" name="idade2" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Profissão:</label>
+                    <input type="text" name="profissao3" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Salário Pretendido (R$):</label>
+                    <input type="number" step="0.01" name="salario4" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label>Experiência Anterior:</label>
+                    <textarea name="experiencia5" rows="5" required></textarea>
+                </div>
+
+                <button class="botao" type="submit">Enviar Cadastro</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
